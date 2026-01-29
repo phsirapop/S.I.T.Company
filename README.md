@@ -8,13 +8,13 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background:#f5f7fa;
+    background: linear-gradient(to bottom,#0d6efd,#6610f2);
+    color:white;
 }
 
-/* ===== TOP HEADER ===== */
+/* ===== HEADER ===== */
 .top-header{
     background:#0d6efd;
-    color:white;
     padding:15px 40px;
     display:flex;
     align-items:center;
@@ -40,24 +40,19 @@ nav a{
     color:white;
     text-decoration:none;
     margin-left:20px;
-    font-size:16px;
 }
 
 /* ===== HERO ===== */
 .hero{
-    background: linear-gradient(to right,#0d6efd,#6610f2);
-    color:white;
-    text-align:center;
     padding:60px 20px;
+    text-align:center;
 }
 
 .hero h1{
     font-size:36px;
-    margin-bottom:10px;
 }
 
 .hero p{
-    font-size:18px;
     opacity:0.9;
 }
 
@@ -65,11 +60,14 @@ nav a{
 .product{
     max-width:650px;
     margin:50px auto;
-    background:white;
     padding:30px;
     text-align:center;
     border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    /* 🔥 เอาพื้นขาวออก */
+    background: rgba(255,255,255,0.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 .product h2{
@@ -82,30 +80,26 @@ nav a{
 }
 
 .product p{
-    font-size:17px;
     line-height:1.6;
 }
 
 .price{
     font-size:24px;
     font-weight:bold;
-    color:#0d6efd;
+    color:#00e5ff;
 }
 
 /* ===== FOOTER ===== */
 footer{
-    background:#222;
-    color:white;
+    background:rgba(0,0,0,0.4);
     text-align:center;
     padding:15px;
-    margin-top:40px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🔹 HEADER -->
 <div class="top-header">
     <div class="logo-area">
         <img src="logo.png">
@@ -119,13 +113,11 @@ footer{
     </nav>
 </div>
 
-<!-- 🔹 HERO -->
 <div class="hero">
     <h1>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h1>
     <p>นวัตกรรมเพื่อความปลอดภัย</p>
 </div>
 
-<!-- 🔹 PRODUCT -->
 <section class="product">
     <h2>สินค้าแนะนำ</h2>
 
@@ -139,9 +131,8 @@ footer{
     <div class="price">฿21,999</div>
 </section>
 
-<!-- 🔹 FOOTER -->
 <footer>
-© 2026 S.I.T Company | All Rights Reserved
+© 2026 S.I.T.Company | All Rights Reserved
 </footer>
 
 </body>
