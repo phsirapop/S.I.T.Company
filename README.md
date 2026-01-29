@@ -120,7 +120,7 @@
   </style>
 </head>
 <body>
-
+<center>  
 <header class="site-header">
   <div class="brand-center">
     <img src="Logo.png" alt="S.I.T Company Logo" class="logo">
@@ -167,6 +167,6 @@
 <footer>
   <p>© 2026 My Product | All Rights Reserved</p>
 </footer>
-
+</center>
 </body>
 </html>
