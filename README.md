@@ -53,11 +53,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-    }
-    .product img {
-    display: block;
+      display: block;
     margin: 0 auto;
-}
+    }
     .card {
       background: white;
       border-radius: 10px;
