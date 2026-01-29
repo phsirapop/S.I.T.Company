@@ -9,13 +9,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: linear-gradient(to bottom, #0d6efd, #6610f2);
+      color: white;
     }
 
-    /* ===== HEADER ===== */
+    /* ===== Header ===== */
     header {
       background: #0d6efd;
-      padding: 25px;
+      padding: 25px 20px;
     }
 
     .brand-center {
@@ -25,112 +26,124 @@
       gap: 15px;
     }
 
-    .brand-center img {
+    .logo {
       width: 70px;
     }
 
-    .brand-center h1 {
-      color: white;
-      margin: 0;
+    .brand-name {
+      font-size: 32px;
+      font-weight: bold;
     }
 
+    /* ===== Nav ===== */
     nav {
       background: #084298;
-      text-align: center;
-      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    /* ===== HERO ===== */
+    /* ===== Hero ===== */
     .hero {
-      background: linear-gradient(to right, #0d6efd, #6610f2);
-      color: white;
+      padding: 70px 20px;
       text-align: center;
-      padding: 50px 20px;
     }
 
-    /* ===== PRODUCT ===== */
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Product ===== */
     .product {
       max-width: 650px;
-      margin: 40px auto;
-      background: white;
+      margin: 50px auto;
       padding: 30px;
-      border-radius: 15px;
       text-align: center;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      background: rgba(255,255,255,0.12);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
 
     .product img {
       display: block;
       margin: 20px auto;
       max-width: 100%;
-      border-radius: 10px;
+      height: auto;
+      border-radius: 12px;
     }
 
     .price {
       font-size: 22px;
       font-weight: bold;
-      color: #0d6efd;
+      color: #ffc107;
       margin-top: 15px;
     }
 
-    /* ===== FOOTER ===== */
+    /* ===== Footer ===== */
     footer {
       background: #212529;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="brand-center">
-    <img src="logo.png" alt="S.I.T Logo">
-    <h1>S.I.T.Company</h1>
-  </div>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="brand-center">
+      <img src="logo.png" alt="S.I.T Logo" class="logo">
+      <span class="brand-name">S.I.T.Company</span>
+    </div>
+  </header>
 
-<nav>
-  <a href="#home">หน้าแรก</a>
-  <a href="#product">สินค้า</a>
-  <a href="#contact">ติดต่อเรา</a>
-</nav>
+  <!-- Nav -->
+  <nav>
+    <a href="#home">หน้าแรก</a>
+    <a href="#product">สินค้า</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </nav>
 
-<section class="hero" id="home">
-  <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
-  <p>นวัตกรรมเพื่อความปลอดภัย</p>
-</section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
+    <p>นวัตกรรมเพื่อความปลอดภัย</p>
+  </section>
 
-<section class="product" id="product">
-  <h2>สินค้าแนะนำ</h2>
+  <!-- Product -->
+  <section class="product" id="product">
+    <h2>สินค้าแนะนำ</h2>
 
-  <img src="pd.jpg" alt="กล้องวงจรปิดอัจฉริยะ">
+    <img src="pd.jpg" alt="กล้องวงจรปิดอัจฉริยะ">
 
-  <p>
-    กล้องวงจรปิดสำหรับการจัดการจราจร<br>
-    ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
-  </p>
+    <p>
+      กล้องวงจรปิดสำหรับการจัดการจราจร<br>
+      ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
+    </p>
 
-  <p class="price">฿21,999</p>
-</section>
+    <div class="price">฿21,999</div>
+  </section>
 
-<section id="contact" style="text-align:center; padding:20px;">
-  📞 โทร: 080-085-0053 | 📧 Email: S.I.T.Company@email.com
-</section>
+  <!-- Contact -->
+  <section class="hero" id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>📞 080-085-0053 | 📧 S.I.T.Company@email.com</p>
+  </section>
 
-<footer>
-  © 2026 S.I.T.Company | All Rights Reserved
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 S.I.T.Company | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
