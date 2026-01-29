@@ -16,26 +16,23 @@
     /* ===== Header ===== */
     .site-header {
       background: #0d6efd;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     .brand-center {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      text-align: center;
+      gap: 14px;
     }
 
     .logo {
-      width: 120px;
-      max-width: 40vw;
+      width: 70px;
       height: auto;
     }
 
     .brand-name {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
       color: white;
     }
@@ -45,8 +42,7 @@
       background: #084298;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
+      gap: 20px;
       padding: 10px;
     }
 
@@ -71,34 +67,35 @@
       margin: auto;
     }
 
-    /* ===== Product ===== */
+    /* ===== PRODUCTS (แก้ตรงนี้) ===== */
     .products {
       display: flex;
-      justify-content: center;
+      justify-content: center;   /* ⭐ ทำให้สินค้าอยู่กลาง */
     }
 
     .card {
       background: white;
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 20px;
-      max-width: 420px;
-      width: 100%;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
+      max-width: 420px;
+      width: 100%;
     }
 
     .card img {
+      display: block;
+      margin: 0 auto;           /* ⭐ รูปอยู่กลาง */
       max-width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto 15px;
       border-radius: 8px;
     }
 
     .price {
       color: #0d6efd;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
+      margin-top: 10px;
     }
 
     .card button {
@@ -109,8 +106,6 @@
       background: #0d6efd;
       color: white;
       cursor: pointer;
-      width: 100%;
-      max-width: 200px;
     }
 
     /* ===== Footer ===== */
@@ -125,10 +120,6 @@
     /* ===== Mobile ===== */
     @media (max-width: 600px) {
       .brand-name {
-        font-size: 22px;
-      }
-
-      .hero h2 {
         font-size: 24px;
       }
     }
@@ -151,7 +142,7 @@
 </nav>
 
 <section class="hero" id="home">
-  <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพเเละอนาคต</h2>
+  <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
   <p>นวัตกรรมเพื่อความปลอดภัย</p>
 </section>
 
@@ -160,20 +151,14 @@
 
   <div class="products">
     <div class="card">
-      <img src="pd.jpg" alt="กล้องอัจฉริยะ(S.I.T.C)">
+      <img src="pd.jpg" alt="สินค้า">
       <h3>สินค้า A</h3>
       <p>
-        กล้องวงจรปิดสำหรับการจัดการดูแลการจอดรถตามที่สาธารณะได้อย่างมีประสิทธิภาพ
-      </p>
-      <p>
-        - ติดตั้งง่าย<br>
-        - ทีมงานผู้เชี่ยวชาญ<br>
-        - ปลอดภัยในการใช้งาน
+        กล้องวงจรปิดสำหรับการจัดการดูแลการจอดรถตามที่สาธารณะ
+        ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
       </p>
       <div class="price">฿21,999</div>
-      <a href="https://mail.google.com">
-        <button>ติดต่อเรา</button>
-      </a>
+      <button>ติดต่อเรา</button>
     </div>
   </div>
 </section>
@@ -181,7 +166,7 @@
 <section class="container" id="contact">
   <h2 style="text-align:center">ติดต่อเรา</h2>
   <p style="text-align:center">
-    📞 080-085-0053 | 📧 S.I.T.Compax@email.com
+    📞 โทร: 080-085-0053 | 📧 Email: S.I.T.Company@email.com
   </p>
 </section>
 
