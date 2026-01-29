@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -92,7 +93,7 @@
 
 <header>
     <div class="header-center">
-        <img src="logo.png" alt="S.I.T Logo">
+        <img src="Logo.png" alt="S.I.T Logo">
         <h1>S.I.T.Company</h1>
     </div>
 </header>
@@ -110,7 +111,7 @@
 
 <section class="product">
     <h2>สินค้าแนะนำ</h2>
-    <img src="logo.png" alt="สินค้า">
+    <img src="pd.jpg" alt="สินค้า">
     <p>
         กล้องวงจรปิดสำหรับการจัดการจราจร
         ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
