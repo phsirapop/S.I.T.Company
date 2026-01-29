@@ -93,7 +93,7 @@
 
 <header>
     <div class="header-center">
-        <img src="logo.png" alt="S.I.T Logo">
+        <img src="Logo.png" alt="S.I.T Logo">
         <h1>S.I.T.Company</h1>
     </div>
 </header>
