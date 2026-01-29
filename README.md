@@ -8,6 +8,8 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #7b2cff);
+            color: white;
         }
 
         /* ===== Header ===== */
@@ -25,11 +27,9 @@
 
         .header-center img {
             width: 70px;
-            height: auto;
         }
 
         .header-center h1 {
-            color: white;
             margin: 0;
             font-size: 32px;
         }
@@ -48,36 +48,41 @@
             font-size: 18px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         /* ===== Hero ===== */
         .hero {
-            background: linear-gradient(135deg, #1e90ff, #7b2cff);
-            color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
         .hero h2 {
-            font-size: 36px;
+            font-size: 34px;
             margin-bottom: 10px;
+        }
+
+        .hero p {
+            opacity: 0.9;
         }
 
         /* ===== Product ===== */
         .product {
-            max-width: 900px;
-            margin: 50px auto;
+            max-width: 600px;
+            margin: 60px auto;
             background: white;
+            color: black;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             text-align: center;
         }
 
+        .product h2 {
+            margin-bottom: 20px;
+        }
+
         .product img {
-            width: 300px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
 
@@ -85,6 +90,21 @@
             font-size: 22px;
             color: #1870f0;
             font-weight: bold;
+        }
+
+        /* ===== Contact ===== */
+        .contact {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 14px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #222;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -113,11 +133,19 @@
     <h2>สินค้าแนะนำ</h2>
     <img src="pd.jpg" alt="สินค้า">
     <p>
-        กล้องวงจรปิดสำหรับการจัดการจราจร
+        กล้องวงจรปิดสำหรับการจัดการจราจร<br>
         ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
     </p>
     <p class="price">฿21,999</p>
 </section>
+
+<div class="contact">
+    📞 โทร: 080-085-0053 | ✉ Email: S.I.T.Company@gmail.com
+</div>
+
+<footer>
+    © 2026 S.I.T.Company | All Rights Reserved
+</footer>
 
 </body>
 </html>
