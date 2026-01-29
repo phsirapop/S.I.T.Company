@@ -121,7 +121,7 @@
 
 <header class="site-header">
   <div class="brand-center">
-    <img src="file:///C:/Users/User/Downloads/ChatGPT%20Image%20Jan%2028,%202026,%2007_06_57%20PM.png" alt="S.I.T Company Logo" class="logo">
+    <img src="Logo.png" alt="S.I.T Company Logo" class="logo">
     <span class="brand-name">S.I.T.Company</span>
   </div>
 </header>
