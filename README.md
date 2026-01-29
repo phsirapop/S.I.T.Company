@@ -8,7 +8,6 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e90ff, #7b2cff);
         }
 
         /* ===== Header ===== */
