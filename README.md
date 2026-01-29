@@ -1,123 +1,136 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>S.I.T.Company</title>
+  <meta charset="UTF-8">
+  <title>S.I.T.Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
 
-        /* ===== Header ===== */
-        header {
-            background: #1870f0;
-            padding: 20px 0;
-        }
+    /* ===== HEADER ===== */
+    header {
+      background: #0d6efd;
+      padding: 25px;
+    }
 
-        .header-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
+    .brand-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
 
-        .header-center img {
-            width: 70px;
-            height: auto;
-        }
+    .brand-center img {
+      width: 70px;
+    }
 
-        .header-center h1 {
-            color: white;
-            margin: 0;
-            font-size: 32px;
-        }
+    .brand-center h1 {
+      color: white;
+      margin: 0;
+    }
 
-        /* ===== Menu ===== */
-        nav {
-            background: #0b3f8f;
-            text-align: center;
-            padding: 10px 0;
-        }
+    nav {
+      background: #084298;
+      text-align: center;
+      padding: 10px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-        /* ===== Hero ===== */
-        .hero {
-            background: linear-gradient(135deg, #1e90ff, #7b2cff);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    /* ===== PRODUCT ===== */
+    .product {
+      max-width: 650px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
 
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+    .product img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
 
-        /* ===== Product ===== */
-        .product {
-            max-width: 900px;
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            text-align: center;
-        }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0d6efd;
+      margin-top: 15px;
+    }
 
-        .product img {
-            width: 300px;
-            margin-bottom: 20px;
-        }
-
-        .price {
-            font-size: 22px;
-            color: #1870f0;
-            font-weight: bold;
-        }
-    </style>
+    /* ===== FOOTER ===== */
+    footer {
+      background: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <div class="header-center">
-        <img src="Logo.png" alt="S.I.T Logo">
-        <h1>S.I.T.Company</h1>
-    </div>
+  <div class="brand-center">
+    <img src="logo.png" alt="S.I.T Logo">
+    <h1>S.I.T.Company</h1>
+  </div>
 </header>
 
 <nav>
-    <a href="index.html">หน้าแรก</a>
-    <a href="products.html">สินค้า</a>
-    <a href="contact.html">ติดต่อเรา</a>
+  <a href="#home">หน้าแรก</a>
+  <a href="#product">สินค้า</a>
+  <a href="#contact">ติดต่อเรา</a>
 </nav>
 
-<section class="hero">
-    <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
-    <p>นวัตกรรมเพื่อความปลอดภัย</p>
+<section class="hero" id="home">
+  <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
+  <p>นวัตกรรมเพื่อความปลอดภัย</p>
 </section>
 
-<section class="product">
-    <h2>สินค้าแนะนำ</h2>
-    <img src="pd.jpg" alt="สินค้า">
-    <p>
-        กล้องวงจรปิดสำหรับการจัดการจราจร
-        ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
-    </p>
-    <p class="price">฿21,999</p>
+<section class="product" id="product">
+  <h2>สินค้าแนะนำ</h2>
+
+  <img src="pd.jpg" alt="กล้องวงจรปิดอัจฉริยะ">
+
+  <p>
+    กล้องวงจรปิดสำหรับการจัดการจราจร<br>
+    ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
+  </p>
+
+  <p class="price">฿21,999</p>
 </section>
+
+<section id="contact" style="text-align:center; padding:20px;">
+  📞 โทร: 080-085-0053 | 📧 Email: S.I.T.Company@email.com
+</section>
+
+<footer>
+  © 2026 S.I.T.Company | All Rights Reserved
+</footer>
 
 </body>
 </html>
