@@ -8,30 +8,48 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-
-            /* ✅ เปลี่ยนเฉพาะสีพื้นหลัง */
-            background: #f5f7fa;
-
+            background: #f5f7fa; /* พื้นหลังเหมือนเดิม */
             color: #000;
         }
 
+        /* ===== HEADER ===== */
         header {
-            text-align: center;
-            padding: 60px 20px;
             background: linear-gradient(to right, #0d6efd, #6610f2);
             color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
 
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 32px;
+            margin: 0;
+            text-decoration: underline;
+        }
+
+        header h2 {
+            font-size: 36px;
+            margin: 15px 0 10px;
         }
 
         header p {
-            font-size: 20px;
+            font-size: 18px;
             opacity: 0.9;
         }
 
+        /* ===== PRODUCT ===== */
         .product {
             max-width: 650px;
             margin: 50px auto;
@@ -43,17 +61,13 @@
         }
 
         .product h2 {
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 20px;
         }
 
         .product img {
-            display: block;
-            margin: 20px auto;
             max-width: 100%;
-            height: auto;
             border-radius: 12px;
-            background: #fff;
         }
 
         .product p {
@@ -64,42 +78,50 @@
         .price {
             font-size: 26px;
             font-weight: bold;
-            margin-top: 15px;
             color: #0d6efd;
+            margin-top: 15px;
         }
 
+        /* ===== FOOTER ===== */
         footer {
-            text-align: center;
-            padding: 20px;
             background: #222;
             color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h1>
-        <p>นวัตกรรมเพื่อความปลอดภัย</p>
-    </header>
+<header>
+    <div class="logo">
+        <!-- 🔽 โลโก้ -->
+        <img src="logo.png" alt="S.I.T Company Logo">
+        <h1>S.I.T.Company</h1>
+    </div>
 
-    <section class="product">
-        <h2>สินค้าแนะนำ</h2>
+    <h2>เทคโนโลยีความปลอดภัยเพื่อคุณภาพและอนาคต</h2>
+    <p>นวัตกรรมเพื่อความปลอดภัย</p>
+</header>
 
-        <img src="pd.jpg" alt="สินค้า">
+<section class="product">
+    <h2>สินค้าแนะนำ</h2>
 
-        <p>
-            กล้องวงจรปิดสำหรับการจัดการจราจร<br>
-            ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
-        </p>
+    <img src="pd.jpg" alt="สินค้า">
 
-        <p class="price">฿21,999</p>
-    </section>
+    <p>
+        กล้องวงจรปิดสำหรับการจัดการจราจร<br>
+        ติดตั้งง่าย ปลอดภัย และใช้งานสะดวก
+    </p>
 
-    <footer>
-        © 2026 S.I.T Company | All Rights Reserved
-    </footer>
+    <p class="price">฿21,999</p>
+</section>
+
+<footer>
+    © 2026 S.I.T Company | All Rights Reserved
+</footer>
 
 </body>
 </html>
